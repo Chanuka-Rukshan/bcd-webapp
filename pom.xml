@@ -8,7 +8,7 @@
     <artifactId>bcd-webapp</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>bcd-webapp</name>
+    <name>bcd-testapp</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

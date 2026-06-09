@@ -1,5 +1,6 @@
 package lk.jiat.web.servlet;
 
+import jakarta.ejb.EJB;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,12 +11,14 @@ import java.io.IOException;
 
 @WebServlet("/a")
 public class A extends HttpServlet {
+
+    @EJB
+    Cal cal;
+
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        m();
+        cal.getResult(10,20);
     }
 
-    public void m(){
-        System.out.println("A m()");
-    }
+
 }
