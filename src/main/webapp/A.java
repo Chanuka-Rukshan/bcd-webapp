@@ -12,10 +12,6 @@ import java.io.IOException;
 public class A extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        m();
-    }
-
-    public void m(){
-        System.out.println("A m()");
+        resp.getWriter().write("This is a servlet A");
     }
 }
